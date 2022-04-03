@@ -41,6 +41,7 @@ module.exports = {
         620: "620px",
       },
       colors: {
+        headingColor: "#2e2e2e",
         textColor: "#101010",
         activeText: "#D6230A",
         gradientBg: "rgba(116, 249, 105,0.4)",
@@ -49,6 +50,7 @@ module.exports = {
         cartBg: "#282a2c",
         cartItem: "#2e3033",
         cartTotal: "#343739",
+        
       },
       screens: {
         sm: "640px",
