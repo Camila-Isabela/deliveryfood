@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "./img/fddlogo.png";
-import Avatar from "./img/avatar2.png"
+import Logo from "../img/fddlogo.png";
+import Avatar from "../img/avatar2.png"
 import { MdShoppingBasket } from "react-icons/md";
 
-function Header() {
+const Header = () => {
 	return (
 		<header className="fixed z-50 w-screen p-6 px-16">
 			{/* desktop & tablet */}
