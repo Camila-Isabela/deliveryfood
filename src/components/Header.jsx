@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import Logo from "../img/fddlogo.png";
-import Avatar from "../img/avatar2.png";
-import { Link } from "react-router-dom";
-import { useStateValue } from "../context/StateProvider";
-import { actionType } from "../context/reducer";
-
 import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
 import { motion } from "framer-motion";
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../firebase.config";
 
-const Header = () => {
+import Logo from "../img/fddlogo.png";
+import Avatar from "../img/avatar2.png";
+import { Link } from "react-router-dom";
+import { useStateValue } from "../context/StateProvider";
+import { actionType } from "../context/reducer";
+
+
+
+function Header() {
     const firebaseAuth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
@@ -19,7 +21,7 @@ const Header = () => {
 
     const [isMenu, setIsMenu] = useState(false);
 
-    const login = async () => {
+    async function login() {
         if (!user) {
             const {
                 // eslint-disable-next-line no-unused-vars
@@ -33,7 +35,7 @@ const Header = () => {
         } else {
             setIsMenu(!isMenu);
         }
-    };
+    }
 
     return (
         <header className="fixed z-50 w-screen p-6 px-16">
@@ -75,8 +77,7 @@ const Header = () => {
                             src={user ? user.photoURL : Avatar}
                             className="w-10 min-w[40px] h-10 min-h[40px] cursor-pointer rounded-full"
                             alt="User profile"
-                            onClick={login}
-                        />
+                            onClick={login} />
                         {isMenu && (
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.6 }}
@@ -86,7 +87,7 @@ const Header = () => {
                             >
                                 {user &&
                                     user.email ===
-                                        "camilaisabela26@gmail.com" && (
+                                    "camilaisabela26@gmail.com" && (
                                         <Link to={"/createItem"}>
                                             <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base ">
                                                 New Item <MdAdd />
@@ -106,6 +107,6 @@ const Header = () => {
             <div className="flex md:hidden w-full h-full ">mobile</div>
         </header>
     );
-};
+}
 
 export default Header;
