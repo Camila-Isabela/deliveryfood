@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
-import { motion } from "framer-motion";
-
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { app } from "../firebase.config";
-
 import Logo from "../img/fddlogo.png";
 import Avatar from "../img/avatar2.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
+
+import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
+import { motion } from "framer-motion";
+
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { app } from "../firebase.config";
 
 const Header = () => {
     const firebaseAuth = getAuth(app);
@@ -74,7 +74,7 @@ const Header = () => {
                             whileTap={{ scale: 0.6 }}
                             src={user ? user.photoURL : Avatar}
                             className="w-10 min-w[40px] h-10 min-h[40px] cursor-pointer rounded-full"
-                            alt="Perfil do usuário"
+                            alt="User profile"
                             onClick={login}
                         />
                         {isMenu && (
@@ -86,7 +86,7 @@ const Header = () => {
                             >
                                 {user &&
                                     user.email ===
-                                        "camila.1920478300067@faeterj-rio.edu.br" && (
+                                        "camilaisabela26@gmail.com" && (
                                         <Link to={"/createItem"}>
                                             <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base ">
                                                 New Item <MdAdd />
