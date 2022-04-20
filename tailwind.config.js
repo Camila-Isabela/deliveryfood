@@ -41,6 +41,7 @@ module.exports = {
         620: "620px",
       },
       colors: {
+        delBg: "#d6faec",
         headingColor: "#2e2e2e",
         textColor: "#101010",
         activeText: "#D6230A",
