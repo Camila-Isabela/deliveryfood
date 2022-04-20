@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../firebase.config";
 
-import Logo from "../img/fddlogo.png";
+import Logo from "../img/logo2.png";
 import Avatar from "../img/avatar2.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
@@ -35,21 +35,21 @@ function Header() {
 		}
 	}
 
-    function logout() {
-        setIsMenu(false)
-        localStorage.clear()
-        dispatch({
-            type: actionType.SET_USER,
-            user: null
-        })
-    }
+	function logout() {
+		setIsMenu(false);
+		localStorage.clear();
+		dispatch({
+			type: actionType.SET_USER,
+			user: null,
+		});
+	}
 
 	return (
 		<header className="fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16">
 			{/* desktop & tablet */}
 			<div className="hidden md:flex w-full h-full items-center justify-between">
 				<Link to={"/"} className="flex items-center gap-2">
-					<img src={Logo} className=" w-20 object-cover" alt="logo" />
+					<img src={Logo} className=" w-12 h-12 object-cover" alt="logo" />
 					<p className="text-headingColor text-xl font-bold">dFood</p>
 				</Link>
 
@@ -121,8 +121,16 @@ function Header() {
 
 			{/* mobile */}
 			<div className="flex items-center justify-between md:hidden w-full h-full ">
+
+				<div className="relative flex items-center justify-center">
+					<MdShoppingBasket className="text-textColor text-2xl cursor-pointer" />
+					<div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-activeText flex items-center justify-center">
+						<p className="text-xs text-white font-semibold">2</p>
+					</div>
+				</div>
+
 				<Link to={"/"} className="flex items-center gap-2">
-					<img src={Logo} className=" w-20 object-cover" alt="logo" />
+					<img src={Logo} className="w-12 h-12 object-cover" alt="logo" />
 					<p className="text-headingColor text-xl font-bold">dFood</p>
 				</Link>
 
