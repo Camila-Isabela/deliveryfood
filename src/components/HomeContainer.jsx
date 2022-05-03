@@ -23,9 +23,9 @@ const HomeContainer = () => {
 				</div>
 
 				<p className="text-[2.5rem] lg:text-[4.5rem] font-bold tracking-wide text-headingColor">
-					A entrega mais rápida em{" "}
+					The fastest Delivery in 
 					<span className="text-green-600 text-[3rem] lg:text-[5rem]">
-						sua cidade
+						Your City
 					</span>
 				</p>
 
@@ -44,14 +44,16 @@ const HomeContainer = () => {
 					Fazer Pedido
 				</button>
 			</div>
-			<div className="py-2 flex-1 flex items-center">
+			<div className="py-2 flex-1 flex items-center relative">
 				<img
 					src={Herobg}
 					alt="hero-bg"
 					className="ml-auto h-420 w-full lg:w-auto lg:h-650"
 				/>
 			</div>
-			<div className="w-full h-full absolute flex items-center justify-center "></div>
+			<div className="w-full h-full top-0 left-0 absolute flex items-center justify-center px-32 py-4">
+				<div className="w-190 p-2 bg-cardOverlay backdrop-blur-md"></div>
+			</div>
 		</section>
 	);
 };
