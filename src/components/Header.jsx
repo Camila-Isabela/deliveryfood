@@ -119,6 +119,8 @@ function Header() {
 				</div>
 			</div>
 
+			{/* //Apenas um teste após modificar os parâmetros no .npmrc */}
+
 			{/* mobile */}
 			<div className="flex items-center justify-between md:hidden w-full h-full ">
 
