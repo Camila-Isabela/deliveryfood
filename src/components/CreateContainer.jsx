@@ -11,7 +11,7 @@ import {
 
 import { categories } from "../utils/data";
 import Loader from "./Loader";
-import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import { deleteObject, getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { storage } from "../firebase.config";
 
 const CreateContainer = () => {
@@ -39,29 +39,44 @@ const CreateContainer = () => {
 		}, (error) => {
 			console.log(error)
 			setFields(true)
-			setMsg('Erro no upload : Tente novamente 🙇')
+			setMsg('Erro no upload : Tente novamente 😕')
 			setAlertStatus('danger')
 			setTimeout(() => {
 				setFields(false)
 				setIsLoading(false)
-			}, 4000)
+			}, 6000)
 		}, () => {
 			getDownloadURL(uploadTask.snapshot.ref).then(downloadURL => {
 				setImageAsset(downloadURL)
 				setIsLoading(false)
 				setFields(true)
-				setMsg('Upload realizado com sucesso! ☺')
+				setMsg('Upload realizado com sucesso! 😊')
 				setAlertStatus('success')
 				setTimeout(() => {
 					setFields(false)
-				}, 4000)
+				}, 6000)
 			})
 		})
 	};
 
-	const deleteImage = () => {};
+	const deleteImage = () => {
+		setIsLoading(true)
+		const deleteRef = ref(storage, imageAsset)
+		deleteObject(deleteRef).then(() => {
+			setImageAsset(null)
+			setIsLoading(false)
+			setFields(true)
+			setMsg("Imagem removida com sucesso! 😌")
+			setAlertStatus("success")
+			setTimeout(() => {
+				setFields(false)
+			}, 6000)
+		})
+	};
 
-	const saveDetails = () => {};
+	const saveDetails = () => {
+
+	};
 
 	return (
 		<div className="w-full min-h-screen flex items-center justify-center">
