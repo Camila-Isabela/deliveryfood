@@ -6,9 +6,9 @@ import Fi1 from "../img/fi1.png";
 export const heroData = [
   {
     id: 1,
-    name: "Icecream",
-    decp: "Chocolate & vanilla",
-    price: "5.25",
+    name: "Sorvete",
+    decp: "Chocolate & Baunilha",
+    price: "8.25",
     imageSrc: I1,
   },
   {
@@ -20,16 +20,16 @@ export const heroData = [
   },
   {
     id: 3,
-    name: "Chicken Kebab",
-    decp: "Mixed Kebab Plate",
-    price: "8.25",
+    name: "Kebab",
+    decp: "Kebab de Frango",
+    price: "26.90",
     imageSrc: C3,
   },
   {
     id: 4,
-    name: "Fish Kebab",
-    decp: "Mixed Fish Kebab",
-    price: "5.25",
+    name: "Kebab",
+    decp: "Kebab de Peixe",
+    price: "38.90",
     imageSrc: Fi1,
   },
 ];
@@ -37,38 +37,38 @@ export const heroData = [
 export const categories = [
   {
     id: 1,
-    name: "Chicken",
+    name: "Frango",
     urlParamName: "chicken",
   },
   {
     id: 2,
-    name: "Curry",
+    name: "Apimentado",
     urlParamName: "curry",
   },
   {
     id: 3,
-    name: "Rice",
+    name: "Arroz",
     urlParamName: "rice",
   },
   {
     id: 4,
-    name: "Fish",
+    name: "Peixe",
     urlParamName: "fish",
   },
   {
     id: 5,
-    name: "Fruits",
+    name: "Frutas",
     urlParamName: "fruits",
   },
   {
     id: 6,
-    name: "Icecreams",
+    name: "Sorvetes",
     urlParamName: "icecreams",
   },
 
   {
     id: 7,
-    name: "Soft Drinks",
+    name: "Drinks",
     urlParamName: "drinks",
   },
 ];
