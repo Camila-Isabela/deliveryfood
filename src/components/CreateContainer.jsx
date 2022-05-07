@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import {
-	MdFastfood,
-	MdCloudUpload,
-	MdDelete,
-	MdFoodBank,
-	MdAttachMoney,
+  MdFastfood,
+  MdCloudUpload,
+  MdDelete,
+  MdFoodBank,
+  MdAttachMoney,
 } from "react-icons/md";
-
 import { categories } from "../utils/data";
 import Loader from "./Loader";
-import { deleteObject, getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import {
+  deleteObject,
+  getDownloadURL,
+  ref,
+  uploadBytesResumable,
+} from "firebase/storage";
 import { storage } from "../firebase.config";
+// import { getAllFoodItems, saveItem } from "../utils/firebaseFunctions";
+// import { actionType } from "../context/reducer";
+// import { useStateValue } from "../context/StateProvider";
 
 const CreateContainer = () => {
 	const [title, setTitle] = useState("");
@@ -33,49 +40,96 @@ const CreateContainer = () => {
 			storage,
 			`Images/${Date.now()}-${imageFile.name}`
 		);
-		const uploadTask = uploadBytesResumable(storageRef, imageFile)
-		uploadTask.on('state_changed', (snapshot) => {
-			const uploadProgress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-		}, (error) => {
-			console.log(error)
-			setFields(true)
-			setMsg('Erro no upload : Tente novamente 😕')
-			setAlertStatus('danger')
-			setTimeout(() => {
-				setFields(false)
-				setIsLoading(false)
-			}, 6000)
-		}, () => {
-			getDownloadURL(uploadTask.snapshot.ref).then(downloadURL => {
-				setImageAsset(downloadURL)
-				setIsLoading(false)
-				setFields(true)
-				setMsg('Upload realizado com sucesso! 😊')
-				setAlertStatus('success')
+		const uploadTask = uploadBytesResumable(storageRef, imageFile);
+		uploadTask.on(
+			"state_changed",
+			(snapshot) => {
+				const uploadProgress =
+					(snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+			},
+			(error) => {
+				console.log(error);
+				setFields(true);
+				setMsg("Erro no upload : Tente novamente 😕");
+				setAlertStatus("danger");
 				setTimeout(() => {
-					setFields(false)
-				}, 6000)
-			})
-		})
+					setFields(false);
+					setIsLoading(false);
+				}, 6000);
+			},
+			() => {
+				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+					setImageAsset(downloadURL);
+					setIsLoading(false);
+					setFields(true);
+					setMsg("Upload realizado com sucesso! 😊");
+					setAlertStatus("success");
+					setTimeout(() => {
+						setFields(false);
+					}, 6000);
+				});
+			}
+		);
 	};
 
 	const deleteImage = () => {
-		setIsLoading(true)
-		const deleteRef = ref(storage, imageAsset)
+		setIsLoading(true);
+		const deleteRef = ref(storage, imageAsset);
 		deleteObject(deleteRef).then(() => {
-			setImageAsset(null)
-			setIsLoading(false)
-			setFields(true)
-			setMsg("Imagem removida com sucesso! 😌")
-			setAlertStatus("success")
+			setImageAsset(null);
+			setIsLoading(false);
+			setFields(true);
+			setMsg("Imagem removida com sucesso! 😌");
+			setAlertStatus("success");
 			setTimeout(() => {
-				setFields(false)
-			}, 6000)
-		})
+				setFields(false);
+			}, 6000);
+		});
 	};
 
 	const saveDetails = () => {
+		setIsLoading(true);
+		try {
+			if (!title || !calories || !imageAsset || !price || !category) {
+				setFields(true);
+				setMsg("Os campos obrigatórios não podem ficar vazios");
+				setAlertStatus("danger");
+				setTimeout(() => {
+					setFields(false);
+					setIsLoading(false);
+				}, 4000);
+			} else {
+				const data = {
+					id: `${Date.now()}`,
+					title: title,
+					imageURL: imageAsset,
+					category: category,
+					calories: calories,
+					qty: 1,
+					price: price,
+				};
+				saveItem(data);
+				setIsLoading(false);
+				setFields(true);
+				setMsg("Dados enviados com sucesso! 😊");
+				setAlertStatus("success");
+				setTimeout(() => {
+					setFields(false);
+				}, 4000);
+				clearData();
+			}
+		} catch (error) {
+			console.log(error);
+			setFields(true);
+			setMsg("Erro no upload : Tente novamente 😕");
+			setAlertStatus("danger");
+			setTimeout(() => {
+				setFields(false);
+				setIsLoading(false);
+			}, 4000);
+		}
 
+		fetchData();
 	};
 
 	return (
@@ -158,7 +212,6 @@ const CreateContainer = () => {
 									<div className="relative h-full">
 										<img
 											src={imageAsset}
-											alt="uploaded image"
 											className="w-full h-full object-cover"
 										/>
 										<button
