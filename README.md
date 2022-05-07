@@ -1,3 +1,9 @@
+<h1 align="center" style="font-size:3.4rem">Delivery Food<h1>
+
+<h1 align="center">
+<img src="./src/img/logo2.png" width="200" height="200" style="align-items: center"><br>
+</h1>
+
 <h2 align="center">
 <a href="#about">About</a>  |
 <a href="#status">Status</a>  |
