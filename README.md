@@ -13,6 +13,8 @@ de sua estrutura.
 
 ![image](https://user-images.githubusercontent.com/53484905/166150924-6df6ecf8-9a30-4a1f-9042-f42793194648.png)
 
+<img src="./src/img/preview2.png">
+
 
 **Note: ainda em edição!**
 
