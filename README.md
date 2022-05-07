@@ -47,4 +47,15 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 <img src="./src/img/logohtml.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logocss.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logoexpress.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;<br><br>
+
+<h2 id="contribute">🖇 Contribute</h2>
+
+    💡 Explore your creativity and skills
+    📥 Make a fork
+    🔱 Create a branck with your feature
+    〽 Commit changes
+    💠 Make a push to your branch
+
+<h3>&nbsp;That's it! 🖖</h3>
+<p>Try and miss again until its works.&nbsp;<img src="./src/img/footlogo.png" alt="logotipo footer"></p>
 **Note: ainda em edição!**
