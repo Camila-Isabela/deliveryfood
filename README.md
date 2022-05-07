@@ -41,7 +41,7 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 
 <h2 id="technologies">🧰 Used Technologies </h2>
 
-<img src="./src/img/logojs.png" width="100" height="75" border-radius="20%">&nbsp;&nbsp;&nbsp;
+<img src="./src/img/logojs.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logonode.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logonodemon.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logohtml.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
