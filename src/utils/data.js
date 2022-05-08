@@ -7,7 +7,7 @@ export const heroData = [
   {
     id: 1,
     name: "Sobremesas",
-    decp: "Açaí com Chocolate",
+    decp: "Açaí",
     price: "8.25",
     imageSrc: I1,
   },
