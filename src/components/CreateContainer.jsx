@@ -31,6 +31,7 @@ const CreateContainer = () => {
 	const [alertStatus, setAlertStatus] = useState("danger");
 	const [msg, setMsg] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
+	// eslint-disable-next-line
 	const [{ foodItems }, dispatch] = useStateValue();
 
 	const uploadImage = (e) => {
@@ -44,6 +45,7 @@ const CreateContainer = () => {
 		uploadTask.on(
 			"state_changed",
 			(snapshot) => {
+				// eslint-disable-next-line
 				const uploadProgress =
 					(snapshot.bytesTransferred / snapshot.totalBytes) * 100;
 			},
@@ -230,6 +232,7 @@ const CreateContainer = () => {
 										<img
 											src={imageAsset}
 											className="w-full h-full object-cover"
+											alt=""
 										/>
 										<button
 											type="button"
