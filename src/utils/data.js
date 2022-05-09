@@ -6,28 +6,28 @@ import Fi1 from "../img/c7.png";
 export const heroData = [
   {
     id: 1,
-    name: "Sobremesas",
+    name: "Sobremesa",
     decp: "Açaí",
     price: "8.25",
     imageSrc: I1,
   },
   {
     id: 2,
-    name: "Bebidas",
+    name: "Bebida",
     decp: "Fanta (lata)",
     price: "10.25",
     imageSrc: D6,
   },
   {
     id: 3,
-    name: "Petiscos",
+    name: "Petisco",
     decp: "Kebab Misto",
     price: "26.90",
     imageSrc: C3,
   },
   {
     id: 4,
-    name: "Refeições",
+    name: "Refeição",
     decp: "Frango com fritas",
     price: "38.90",
     imageSrc: Fi1,
@@ -37,38 +37,35 @@ export const heroData = [
 export const categories = [
   {
     id: 1,
-    name: "Frango",
-    urlParamName: "chicken",
+    name: "Bebida",
+    urlParamName: "drink",
+    
   },
   {
     id: 2,
-    name: "Apimentado",
-    urlParamName: "curry",
+    name: "Petisco",
+    urlParamName: "snack",
   },
   {
     id: 3,
-    name: "Arroz",
-    urlParamName: "rice",
+    name: "Refeição",
+    urlParamName: "meal",
   },
   {
     id: 4,
-    name: "Peixe",
-    urlParamName: "fish",
+    name: "Saladas",
+    urlParamName: "salads",
+    
   },
   {
     id: 5,
-    name: "Frutas",
-    urlParamName: "fruits",
+    name: "Sanduíche",
+    urlParamName: "sandwich",
   },
   {
     id: 6,
-    name: "Sorvetes",
-    urlParamName: "icecreams",
+    name: "Sobremesa",
+    urlParamName: "dessert",
   },
 
-  {
-    id: 7,
-    name: "Drinks",
-    urlParamName: "drinks",
-  },
 ];
