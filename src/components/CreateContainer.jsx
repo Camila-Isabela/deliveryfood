@@ -5,9 +5,9 @@ import {
   MdFastfood,
   MdCloudUpload,
   MdDelete,
-  MdFoodBank,
-  MdAttachMoney,
+  MdFoodBank, 
 } from "react-icons/md";
+import { BiMoney } from "react-icons/bi"
 import { categories } from "../utils/data";
 import Loader from "./Loader";
 import {
@@ -57,7 +57,7 @@ const CreateContainer = () => {
 				setTimeout(() => {
 					setFields(false);
 					setIsLoading(false);
-				}, 6000);
+				}, 8000);
 			},
 			() => {
 				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -68,7 +68,7 @@ const CreateContainer = () => {
 					setAlertStatus("success");
 					setTimeout(() => {
 						setFields(false);
-					}, 6000);
+					}, 8000);
 				});
 			}
 		);
@@ -85,7 +85,7 @@ const CreateContainer = () => {
 			setAlertStatus("success");
 			setTimeout(() => {
 				setFields(false);
-			}, 6000);
+			}, 8000);
 		});
 	};
 
@@ -99,7 +99,7 @@ const CreateContainer = () => {
 				setTimeout(() => {
 					setFields(false);
 					setIsLoading(false);
-				}, 4000);
+				}, 8000);
 			} else {
 				const data = {
 					id: `${Date.now()}`,
@@ -128,7 +128,7 @@ const CreateContainer = () => {
 			setTimeout(() => {
 				setFields(false);
 				setIsLoading(false);
-			}, 4000);
+			}, 8000);
 		}
 
 		fetchData();
@@ -264,7 +264,7 @@ const CreateContainer = () => {
 					</div>
 
 					<div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-						<MdAttachMoney className="text-gray-700 text-2xl" />
+						<BiMoney className="text-gray-700 text-2xl" />
 						<input
 							type="text"
 							required
