@@ -37,35 +37,75 @@ export const heroData = [
 export const categories = [
   {
     id: 1,
-    name: "Bebida",
-    urlParamName: "drink",
-    
+    name: "Chicken",
+    urlParamName: "chicken",
   },
   {
     id: 2,
-    name: "Petisco",
-    urlParamName: "snack",
+    name: "Curry",
+    urlParamName: "curry",
   },
   {
     id: 3,
-    name: "Refeição",
-    urlParamName: "meal",
+    name: "Rice",
+    urlParamName: "rice",
   },
   {
     id: 4,
-    name: "Saladas",
-    urlParamName: "salads",
-    
+    name: "Fish",
+    urlParamName: "fish",
   },
   {
     id: 5,
-    name: "Sanduíche",
-    urlParamName: "sandwich",
+    name: "Fruits",
+    urlParamName: "fruits",
   },
   {
     id: 6,
-    name: "Sobremesa",
-    urlParamName: "dessert",
+    name: "Icecreams",
+    urlParamName: "icecreams",
   },
 
+  {
+    id: 7,
+    name: "Soft Drinks",
+    urlParamName: "drinks",
+  },
 ];
+
+
+// export const categories = [
+//   {
+//     id: 1,
+//     name: "Bebida",
+//     urlParamName: "drink",
+    
+//   },
+//   {
+//     id: 2,
+//     name: "Petisco",
+//     urlParamName: "snack",
+//   },
+//   {
+//     id: 3,
+//     name: "Refeição",
+//     urlParamName: "meal",
+//   },
+//   {
+//     id: 4,
+//     name: "Saladas",
+//     urlParamName: "salads",
+    
+//   },
+//   {
+//     id: 5,
+//     name: "Sanduíche",
+//     urlParamName: "sandwich",
+//   },
+//   {
+//     id: 6,
+//     name: "Sobremesa",
+//     urlParamName: "dessert",
+//   },
+
+// ];
