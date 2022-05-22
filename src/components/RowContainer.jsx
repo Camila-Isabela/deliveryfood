@@ -47,7 +47,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
           >
             <div className="w-full flex items-center justify-between">
               <motion.div
-                className="w-40 h-40 -mt-8 drop-shadow-2xl"
+                className="w-30 h-40 -mt-8 drop-shadow-2xl"
                 whileHover={{ scale: 1.2 }}
               >
                 <img
@@ -66,7 +66,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
             </div>
 
             <div className="w-full flex flex-col items-end justify-end -mt-8">
-              <p className="text-textColor font-semibold text-base md:text-lg">
+              <p className="text-textColor font-semibold text-base md:text-sm">
                 {item?.title}
               </p>
               <p className="mt-1 text-sm text-gray-500">
