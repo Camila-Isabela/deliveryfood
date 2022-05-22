@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
-function Header() {
+const Header = () => {
 	const firebaseAuth = getAuth(app);
 	const provider = new GoogleAuthProvider();
 
@@ -20,7 +20,7 @@ function Header() {
 
 	const [isMenu, setIsMenu] = useState(false);
 
-	async function login() {
+	const login = async () => {
 		if (!user) {
 			const {
 				user: { refreshToken, providerData },
@@ -35,7 +35,7 @@ function Header() {
 		}
 	}
 
-	function logout() {
+	const logout = () => {
 		setIsMenu(false);
 		localStorage.clear();
 
@@ -89,7 +89,7 @@ function Header() {
 						<MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
 						{cartItems && cartItems.length > 0 && (
 							<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-								<p className="text-xs text-white font-semibold">
+								<p className="text-xs text-white bg-red-600 rounded-full w-6  flex items-center justify-center font-semibold">
 									{cartItems.length}
 								</p>
 							</div>
@@ -144,7 +144,7 @@ function Header() {
 					<MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
 					{cartItems && cartItems.length > 0 && (
 						<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-							<p className="text-xs text-white font-semibold">
+							<p className="text-xs  text-white font-semibold">
 								{cartItems.length}
 							</p>
 						</div>
