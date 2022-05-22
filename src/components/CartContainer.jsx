@@ -1,3 +1,4 @@
+ /* eslint-disable */
 // eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useEffect, useState } from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";

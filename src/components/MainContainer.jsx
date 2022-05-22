@@ -1,3 +1,4 @@
+ /* eslint-disable */
 import React, { useEffect, useRef, useState } from "react";
 import HomeContainer from "./HomeContainer";
 import { motion } from "framer-motion";

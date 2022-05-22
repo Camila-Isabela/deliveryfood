@@ -1,3 +1,4 @@
+ /* eslint-disable */
 // eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useEffect, useRef, useState } from "react";
 import { MdShoppingBasket } from "react-icons/md";
@@ -81,7 +82,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
         ))
       ) : (
         <div className="w-full flex flex-col items-center justify-center">
-          <img src={NotFound} className="h-340" />
+          <img src={NotFound} className="h-340" alt="Item not found" />
           <p className="text-xl text-headingColor font-semibold my-2">
             Items não encontrados
           </p>
