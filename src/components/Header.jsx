@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from "react";
 import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -22,7 +23,6 @@ function Header() {
 	async function login() {
 		if (!user) {
 			const {
-				// eslint-disable-next-line no-unused-vars
 				user: { refreshToken, providerData },
 			} = await signInWithPopup(firebaseAuth, provider);
 			dispatch({
