@@ -113,7 +113,7 @@ const CartContainer = () => {
                 type="button"
                 className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
-                Login to check out
+                Login e check-out
               </motion.button>
             )}
           </div>
@@ -122,7 +122,7 @@ const CartContainer = () => {
         <div className="w-full h-full flex flex-col items-center justify-center gap-6">
           <img src={EmptyCart} className="w-300" alt="" />
           <p className="text-xl text-textColor font-semibold">
-            Add some items to your cart
+            Add + items no seu pedido
           </p>
         </div>
       )}
