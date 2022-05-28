@@ -33,24 +33,24 @@ const MenuContainer = () => {
                 <div
                   className={`w-10 h-10 rounded-full shadow-lg ${
                     filter === category.urlParamName
-                      ? "bg-white"
-                      : "bg-cartNumBg"
-                  } group-hover:bg-white flex items-center justify-center`}
+                      ? "bg-orange-600"
+                      : "bg-white"
+                  } group-hover:bg-orange-600 flex items-center justify-center `}
                 >
                   <IoFastFood
                     className={`${
                       filter === category.urlParamName
-                        ? "text-textColor"
-                        : "text-white"
+                        ? "w-24"
+                        : "text-textColor"
                     } group-hover:text-textColor text-lg`}
                   />
                 </div>
                 <p
                   className={`text-sm ${
                     filter === category.urlParamName
-                      ? "text-white"
-                      : "text-textColor"
-                  } group-hover:text-white`}
+                      ? " text-[1.2rem] decoration-orange-700 underline underline-offset-4 decoration-2 font-medium tracking-widest"
+                      : "text-textColor antialiased "
+                  } `}
                 >
                   {category.name}
                 </p>
