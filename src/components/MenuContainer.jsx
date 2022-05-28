@@ -1,7 +1,7 @@
  /* eslint-disable */
 // eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useEffect, useState } from "react";
-import { IoFastFood } from "react-icons/io5";
+import { MdFastfood } from "react-icons/md";
 import { categories } from "../utils/data";
 import { motion } from "framer-motion";
 import RowContainer from "./RowContainer";
@@ -37,7 +37,7 @@ const MenuContainer = () => {
                       : "bg-white"
                   } group-hover:bg-orange-600 flex items-center justify-center `}
                 >
-                  <IoFastFood
+                  <MdFastfood
                     className={`${
                       filter === category.urlParamName
                         ? "w-24"
