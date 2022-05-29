@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { useState } from "react";
 import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
+import { IoBagOutline } from "react-icons/io5"
 import { motion } from "framer-motion";
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -86,7 +87,7 @@ const Header = () => {
 						className="relative flex items-center justify-center"
 						onClick={showCart}
 					>
-						<MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
+						<IoBagOutline className="text-textColor text-2xl  cursor-pointer" />
 						{cartItems && cartItems.length > 0 && (
 							<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
 								<p className="text-xs text-white bg-red-600 rounded-full w-6  flex items-center justify-center font-semibold">
@@ -141,10 +142,10 @@ const Header = () => {
 					className="relative flex items-center justify-center"
 					onClick={showCart}
 				>
-					<MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
+					<IoBagOutline className="text-textColor text-2xl  cursor-pointer" />
 					{cartItems && cartItems.length > 0 && (
 						<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-							<p className="text-xs  text-white font-semibold">
+							<p className="text-xs  text-white bg-red-600 font-semibold">
 								{cartItems.length}
 							</p>
 						</div>
