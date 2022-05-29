@@ -2,6 +2,7 @@
 // eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useEffect, useRef, useState } from "react";
 import { MdShoppingBasket } from "react-icons/md";
+import { IoBagAddOutline } from "react-icons/io5"
 import { motion } from "framer-motion";
 import NotFound from "../img/NotFound.svg";
 import { useStateValue } from "../context/StateProvider";
@@ -58,10 +59,10 @@ const RowContainer = ({ flag, data, scrollValue }) => {
               </motion.div>
               <motion.div
                 whileTap={{ scale: 0.75 }}
-                className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
+                className="w-10 h-10 rounded-full hover:bg-gray-400  flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
                 onClick={() => setItems([...cartItems, item])}
               >
-                <MdShoppingBasket className="text-white" />
+                <IoBagAddOutline className="text-black w-6 h-6 " />
               </motion.div>
             </div>
 
