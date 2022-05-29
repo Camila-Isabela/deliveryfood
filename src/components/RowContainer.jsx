@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoBagAddOutline } from "react-icons/io5"
 import { motion } from "framer-motion";
-import NotFound from "../img/NotFound.svg";
+import NotFound from "../img/wait2.jpg";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
@@ -83,9 +83,9 @@ const RowContainer = ({ flag, data, scrollValue }) => {
         ))
       ) : (
         <div className="w-full flex flex-col items-center justify-center">
-          <img src={NotFound} className="h-340" alt="Item not found" />
-          <p className="text-xl text-headingColor font-semibold my-2">
-            Items não encontrados
+          <img src={NotFound} className=" h-320 w-full lg:w-auto lg:h-60" alt="Selecione uma categoria" />
+          <p className="text-base text-headingColor text-center font-semibold my-2">
+            Tá esperando o que? Selecione uma categoria 
           </p>
         </div>
       )}
