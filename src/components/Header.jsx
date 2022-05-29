@@ -90,7 +90,7 @@ const Header = () => {
 						<IoBagOutline className="text-textColor text-2xl  cursor-pointer" />
 						{cartItems && cartItems.length > 0 && (
 							<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-								<p className="text-xs text-white bg-red-600 rounded-full w-6  flex items-center justify-center font-semibold">
+								<p className="text-xs text-white bg-red-600 rounded-full w-5 h-5 flex items-center justify-center font-semibold">
 									{cartItems.length}
 								</p>
 							</div>
@@ -145,7 +145,7 @@ const Header = () => {
 					<IoBagOutline className="text-textColor text-2xl  cursor-pointer" />
 					{cartItems && cartItems.length > 0 && (
 						<div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
-							<p className="text-xs  text-white bg-red-600 font-semibold">
+							<p className="text-xs rounded-full w-4 h-4 flex items-center justify-center text-white bg-red-600 font-semibold">
 								{cartItems.length}
 							</p>
 						</div>

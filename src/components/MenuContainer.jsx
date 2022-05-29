@@ -48,7 +48,7 @@ const MenuContainer = () => {
                 <p
                   className={`text-sm ${
                     filter === category.urlParamName
-                      ? " text-[1.2rem] decoration-orange-700 underline underline-offset-4 decoration-2 font-medium tracking-widest"
+                      ? " text-[1.2rem] decoration-orange-600 underline underline-offset-4 decoration-2 font-medium tracking-widest"
                       : "text-textColor antialiased "
                   } `}
                 >
