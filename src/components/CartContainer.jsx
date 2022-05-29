@@ -87,7 +87,7 @@ const CartContainer = () => {
             </div>
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-400 text-lg">Taxa de entrega</p>
-              <p className="text-gray-400 text-lg">R$ 2,50</p>
+              <p className="text-gray-400 text-lg">R$ 2.50</p>
             </div>
 
             <div className="w-full border-b border-gray-600 my-2"></div>
