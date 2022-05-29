@@ -1,5 +1,4 @@
 import React from "react";
-import Delivery from "../img/delivery.png";
 import HomeBg from "../img/moto1.jpg";
 // import { heroData } from "../utils/data";
 
