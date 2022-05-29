@@ -1,6 +1,7 @@
 import React from "react";
 import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.png";
+import HomeBg from "../img/moto1.jpg";
 import { heroData } from "../utils/data";
 
 const HomeContainer = () => {
@@ -31,10 +32,7 @@ const HomeContainer = () => {
         </p>
 
         <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima velit
-          eaque fugit distinctio est nam voluptatum architecto, porro iusto
-          deserunt recusandae ipsa minus eos sunt, dolores illo repellat facere
-          suscipit!
+          Os melhores pedidos no melhor tempo! 😋
         </p>
 
         {/* <button
@@ -46,12 +44,12 @@ const HomeContainer = () => {
       </div>
       <div className="py-2 flex-1 flex items-center relative">
         <img
-          src={HeroBg}
-          className=" ml-auto h-420 w-full lg:w-auto lg:h-650"
+          src={HomeBg}
+          className=" ml-auto h-320 w-full lg:w-auto lg:h-420"
           alt="hero-bg"
         />
         
-        <div className="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center lg:px-16  py-4 gap-8 flex-wrap">
+        {/* <div className="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-center lg:px-16  py-4 gap-8 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div
@@ -76,7 +74,7 @@ const HomeContainer = () => {
                 </p>
               </div>
             ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
