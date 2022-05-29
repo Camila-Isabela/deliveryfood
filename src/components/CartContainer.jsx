@@ -83,11 +83,11 @@ const CartContainer = () => {
           <div className="w-full flex-1 bg-cartTotal rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2">
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-400 text-lg">Sub Total</p>
-              <p className="text-gray-400 text-lg">R$ {tot.toFixed(2)}</p>
+              <p className="text-gray-400 text-lg">R$ {tot}</p>
             </div>
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-400 text-lg">Taxa de entrega</p>
-              <p className="text-gray-400 text-lg">R$ 2.50</p>
+              <p className="text-gray-400 text-lg">R$ 2,50</p>
             </div>
 
             <div className="w-full border-b border-gray-600 my-2"></div>
@@ -105,7 +105,7 @@ const CartContainer = () => {
                 type="button"
                 className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
-                Check Out
+                Pagamento
               </motion.button>
             ) : (
               <motion.button
@@ -113,7 +113,7 @@ const CartContainer = () => {
                 type="button"
                 className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
-                Login e check-out
+                Login e Pagamento
               </motion.button>
             )}
           </div>
