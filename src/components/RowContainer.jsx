@@ -43,8 +43,9 @@ const RowContainer = ({ flag, data, scrollValue }) => {
         data.map((item) => (
           <div
             key={item?.id}
-            className="w-275 h-[175px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
+            className="w-300 h-275 min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-8 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
           >
+            {/* Ajustes de imagem */}
             <div className="w-full flex items-center justify-between">
               <motion.div
                 className="w-30 h-40 -mt-8 drop-shadow-2xl"
@@ -53,7 +54,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                 <img
                   src={item?.imageURL}
                   alt=""
-                  className="w-full h-full object-contain"
+                  className="w-32 h-32 mb-6 object-contain"
                 />
               </motion.div>
               <motion.div
