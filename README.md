@@ -36,7 +36,7 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 <div text-align="center">  
      
 <h3>AppWeb</h3>
-<img src="./src/img/preview1web.png">
+<img src="./src/img/preview11web.png">
 
 <h3>AppMobile</h3>
 <img src="./src/img/preview1mobile.png">
