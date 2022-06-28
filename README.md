@@ -38,11 +38,17 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 <h3>AppWeb</h3>
 <img src="./src/img/preview11web.png">
 
+<h3>Menu</h3>
+<img src="./src/img/menu1.png">
+<img src="./src/img/menu2.png">
+
 <h3>AppMobile</h3>
 <img src="./src/img/preview11mobile.png" width="200">
 
 <h3>Dashboard</h3>
-<img src="./src/img/preview2.png">
+<img src="./src/img/dashboard.png">
+<img src="./src/img/dashboard2.png">
+
 </div>
 
 <h2 id="technologies">🧰 Used Technologies </h2>
