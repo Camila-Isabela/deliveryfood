@@ -39,7 +39,7 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 <img src="./src/img/preview11web.png">
 
 <h3>AppMobile</h3>
-<img src="./src/img/preview1mobile.png">
+<img src="./src/img/preview11mobile.png" width="200">
 
 <h3>Dashboard</h3>
 <img src="./src/img/preview2.png">
