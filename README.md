@@ -13,9 +13,7 @@
 </h2>
 
 <h2 id="about">🏷 About The Project</h2>
-<p>Application developed for assessment in the field of Systems Analysis topics
-involving the content of Requirements Engineering and Project Modeling as part of
-of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
+<p>Aplicação em desenvolvimento para obtenção de conhecimento prático na área de Programação Web e Mobile utilizando React, Componentização, Imutabilidade, Login Social e Gerenciamento de Dados com a plataforma Firebase.</p>
 
 <h2 id="status"> 🚦Status </h2>
 <h4 align="center"> 
@@ -24,25 +22,25 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 
 ### Features
 
-- [x] Login using Google
-- [x] Uploading new item
-- [x] Deleting items
-- [ ] Food search by word
-- [ ] Cart items
-- [ ] Save results to database
+- [x] Login usando Google
+- [x] Uploading de novo item
+- [x] Deletar items
+- [ ] Encontrar itens pela palavra
+- [x] Cart de items
+- [x] Salvar resultados no database
 
 <h2 id="preview">🔎 Preview </h2>
 
 <div text-align="center">  
      
-<h3>AppWeb</h3>
+<h3>App Web</h3>
 <img src="./src/img/preview11web.png">
 
 <h3>Menu</h3>
 <img src="./src/img/menu1.png">
 <img src="./src/img/menu2.png">
 
-<h3>AppMobile</h3>
+<h3>App Mobile</h3>
 <img src="./src/img/preview11mobile.png" width="200">
 
 <h3>Dashboard</h3>
@@ -51,16 +49,17 @@ of its structure under the guidance of Prof. Dr. Alfredo Boente.</p>
 
 </div>
 
-<h2 id="technologies">🧰 Used Technologies </h2>
+<h2 id="technologies">🧰 Tecnologias </h2>
 
-<img src="./src/img/logojs.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
-<img src="./src/img/logonode.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
-<img src="./src/img/logonodemon.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
+<img src="./src/img/js.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
+<img src="./src/img/node.jpeg" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
+<img src="./src/img/nodemon.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
+<img src="./src/img/firebase.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logohtml.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
 <img src="./src/img/logocss.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;
-<img src="./src/img/logoexpress.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;<br><br>
+<img src="./src/img/express.png" width="100" height="75" style="border-radius:20%">&nbsp;&nbsp;&nbsp;<br><br>
 
-<h2 id="contribute">🖇 Contribute</h2>
+<h2 id="contribute">🖇 Contribuindo...</h2>
 
     💡 Explore your creativity and skills
     📥 Make a fork
