@@ -13,7 +13,9 @@
 </h2>
 
 <h2 id="about">🏷 About The Project</h2>
-<p>Aplicação em desenvolvimento para obtenção de conhecimento prático na área de Programação Web e Mobile utilizando React, Componentização, Imutabilidade, Login Social e Gerenciamento de Dados com a plataforma Firebase.</p>
+<p>Aplicação da categoria eCommerce em desenvolvimento para obtenção de conhecimento prático na área de Programação Web e Mobile utilizando React, Componentização, Imutabilidade, Login Social e Gerenciamento de Dados com a plataforma Firebase.</p>
+
+<p>Link: <a>https://dfoo.netlify.app/</a></p>
 
 <h2 id="status"> 🚦Status </h2>
 <h4 align="center"> 
